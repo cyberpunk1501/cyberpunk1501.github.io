@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forum</title>
+  <meta name="description" content="Diễn đàn cộng đồng về Nhật" />
+  <meta name="keywords" content="Nhật, forum, cộng đồng, thảo luận" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Thanh điều hướng bên trái -->
+    <aside class="sidebar">
+      <h2>Menu</h2>
+       <a href="/index.html">Home</a>
+      <a href="/Picture.html">Pictures</a>
+      <a href="/Video.html">Videos</a>
+      <a href="/Forum.html">Forum</a>
+      <a href="/Contact.html">Contact</a>
+    </aside>
+
+    <!-- Nội dung chính -->
+    <main class="content">
+      <h1>Diễn Đàn Cộng Đồng về hành vi đụ một cách bệnh hoạn của Nhật</h1>
+      <p>
+        Chào mừng bạn đến với diễn đàn cộng đồng dành riêng cho những ai quan tâm
+        về đụ cùng Nhật.
+      </p>
+
+      <h2>1. Chia Sẻ Câu Chuyện</h2>
+      <p>
+        💬 Hãy chia sẻ những trải nghiệm, câu chuyện và suy nghĩ của bạn về hành
+        vi đụ kỳ quái của Nhật. Đây là nơi để bạn thể hiện bản thân một cách tự do
+        và không bị đánh giá.
+      </p>
+
+      <h2>2. Thảo Luận Về Chủ Đề Liên Quan</h2>
+      <p>
+        🗣️ Tham gia vào các cuộc thảo luận về các chủ đề liên quan đến hành vi đụ
+        của Nhật, từ những khoảnh khắc hài hước đến những phân tích sâu sắc về tâm
+        lý và động cơ đằng sau những hành vi đó.
+      </p>
+
+      <h2>3. Kết Nối Với Những Người Cùng Sở Thích</h2>
+      <p>
+        🤝 Tìm kiếm và kết nối với những người có cùng sở thích và quan điểm về
+        hành vi đụ của Nhật. Xây dựng một cộng đồng hỗ trợ và chia sẻ kinh nghiệm
+        cùng nhau.
+      </p>
+
+      <!-- Khung bình luận Disqus -->
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = window.location.pathname;
+        };
+
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://website-nhat.disqus.com/embed.js'; 
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Vui lòng bật JavaScript để xem bình luận.</noscript>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Trang web của Nhật. All rights reserved.</p>
+  </footer>
+</body>
+</html>
