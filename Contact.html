@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <meta name="description" content="Liên hệ và đăng ký VIP với Website Nhật" />
+  <meta name="keywords" content="Nhật, liên hệ, VIP, cộng đồng" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Thanh điều hướng bên trái -->
+    <aside class="sidebar">
+      <h2>Menu</h2>
+       <a href="/index.html">Home</a>
+      <a href="/Picture.html">Pictures</a>
+      <a href="/Video.html">Videos</a>
+      <a href="/Forum.html">Forum</a>
+      <a href="/Contact.html">Contact</a>
+    </aside>
+
+    <!-- Nội dung chính -->
+    <main class="content">
+      <h1>Liên hệ với chúng tôi</h1>
+      <p>Hãy để lại thông tin, chúng tôi sẽ phản hồi sớm nhất có thể.</p>
+
+      <!-- Form liên hệ -->
+      <form action="#" method="post">
+        <label for="name">Tên của bạn:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Nội dung liên hệ:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Gửi liên hệ</button>
+      </form>
+
+      <h1>Đăng ký VIP</h1>
+      <p>Trở thành thành viên VIP để xem thêm nhiều video đặc biệt.</p>
+
+      <!-- Form VIP -->
+      <form action="#" method="post">
+        <label for="name">Tên của bạn:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="plan">Chọn gói VIP:</label><br>
+        <select id="plan" name="plan">
+          <option value="1month">VIP 1 tháng - 100k</option>
+          <option value="3month">VIP 3 tháng - 250k</option>
+          <option value="12month">VIP 12 tháng - 900k</option>
+        </select><br><br>
+
+        <label for="payment">Phương thức thanh toán:</label><br>
+        <select id="payment" name="payment">
+          <option value="momo">Momo</option>
+          <option value="bank">Chuyển khoản ngân hàng</option>
+          <option value="paypal">PayPal</option>
+        </select><br><br>
+
+        <button type="submit">Đăng ký VIP</button>
+      </form>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Trang web của Nhật. All rights reserved.</p>
+  </footer>
+  <!-- Nhạc nền ẩn -->
+<audio id="bg-music" autoplay loop>
+  <source src="/sound/1130_1.MP3" type="audio/mpeg">
+  Trình duyệt của bạn không hỗ trợ audio.
+</audio>
+
+<script>
+  // Lấy phần tử audio
+  const audio = document.getElementById("bg-music");
+  // Giảm âm lượng xuống 50%
+  audio.volume = 0.5;
+
+  // Một số trình duyệt chặn autoplay có tiếng,
+  // nên nếu muốn chắc chắn phát, bạn có thể bật tiếng sau khi người dùng click:
+  document.body.addEventListener("click", () => {
+    audio.muted = false; // bỏ mute khi người dùng click lần đầu
+  }, { once: true });
+</script>
+
+</body>
+</html>
