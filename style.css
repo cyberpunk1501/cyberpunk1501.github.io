@@ -165,7 +165,9 @@ body {
   border-color: rgba(255,42,42,0.45);
 }
 
-.card img, .thumb {
+.card img,
+.card video,
+.thumb {
   display: block;
   width: 100%;
   height: 140px;
